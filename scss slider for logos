@@ -1,0 +1,64 @@
+//Carousel logo
+
+* {
+margin: 0;
+
+  
+}
+
+#slider{
+ height: 500px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.container-logo{
+  width: 1600px;
+  margin: auto;
+}
+
+.subcontainer-logo{
+  width: 85%;
+  margin: auto;
+ }
+
+.slide-img{
+  width: 100%;
+  min-height: 275px;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.slide-img img {
+    max-width: 100%;
+    height: auto;
+ }
+
+ 
+.slide-img a{
+    opacity: 0;
+    text-decoration: none;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 1.5;
+    color: white;
+}
+
+.slide-img:hover {
+   opacity: 1;
+   transform: scale(1);
+}
+
+
+
+ @media(max-width:1600px) {
+    .container{
+        width: 100%;
+    }}
